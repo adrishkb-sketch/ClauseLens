@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClauseLens | AI Document Explainer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            ClauseLens
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#analyzer">Analyzer</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                AI-Powered Document Intelligence
+            </span>
+
+            <h1>
+                Understand Any Contract,
+                Policy or Agreement
+                in Minutes
+            </h1>
+
+            <p>
+                Upload documents, detect risks,
+                understand important clauses,
+                and receive simple explanations
+                powered by AI.
+            </p>
+
+            <a href="#analyzer" class="hero-btn">
+                Analyze Document
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ANALYZER -->
+    <section id="analyzer" class="analyzer-section">
+
+        <div class="section-header">
+            <h2>Document Analyzer</h2>
+            <p>
+                Upload a PDF or paste text below.
+            </p>
+        </div>
+
+        <div class="analyzer-card">
+
+            <!-- DOCUMENT TYPE -->
+            <div class="form-group">
+                <label>Document Type</label>
+
+                <select id="docType">
+
+                    <option value="rental">
+                        Rental Agreement
+                    </option>
+
+                    <option value="insurance">
+                        Insurance Policy
+                    </option>
+
+                    <option value="terms">
+                        Terms & Conditions
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+            </div>
+
+            <!-- PDF UPLOAD -->
+            <div class="form-group">
+                <label>Upload PDF</label>
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept=".pdf"
+                >
+            </div>
+
+            <div class="or-divider">
+                OR
+            </div>
+
+            <!-- TEXT INPUT -->
+            <div class="form-group">
+                <label>Paste Text</label>
+
+                <textarea
+                    id="textInput"
+                    placeholder="Paste document text here..."
+                ></textarea>
+            </div>
+
+            <!-- BUTTON -->
+            <button id="analyzeBtn">
+                Analyze Document
+            </button>
+
+        </div>
+
+        <!-- LOADING -->
+        <div id="loading" class="loading hidden">
+
+            <div class="spinner"></div>
+
+            <p>
+                Analyzing document...
+            </p>
+
+        </div>
+
+        <!-- RESULT -->
+        <div id="resultSection" class="result-section hidden">
+
+            <h2>Analysis Result</h2>
+
+            <div class="result-card">
+
+                <pre id="resultText"></pre>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+
+        <h2>What ClauseLens Can Analyze</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>Rental Agreements</h3>
+                <p>
+                    Understand deposits,
+                    penalties, eviction rules
+                    and hidden obligations.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Insurance Policies</h3>
+                <p>
+                    Discover exclusions,
+                    coverage limits,
+                    and claim conditions.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Terms & Conditions</h3>
+                <p>
+                    Know your rights,
+                    liabilities and data usage.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Study Material</h3>
+                <p>
+                    Get simplified explanations
+                    and concise summaries.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="how-it-works">
+
+        <h2>How It Works</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <span>1</span>
+                <h3>Upload</h3>
+                <p>
+                    Upload PDF or paste text.
+                </p>
+            </div>
+
+            <div class="step">
+                <span>2</span>
+                <h3>Analyze</h3>
+                <p>
+                    ClauseLens processes the document.
+                </p>
+            </div>
+
+            <div class="step">
+                <span>3</span>
+                <h3>Understand</h3>
+                <p>
+                    Receive clear insights and warnings.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 ClauseLens.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
